@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icons/image.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/light.css" id="theme">
     <title>WebP Converter</title>
 </head>
-<body>
-    <header>
+<body class="flex column centred gap-32">
+    <header class="flex gap-16 width-100 justify-center">
         <img src="icons/image.svg" alt="image_icon"/>
         <h1>Image to WebP Converter</h1>
     </header>
-    <main>
-        <div class="index">
-            <button>Upload files<img src="icons/upload.svg" alt="upload icon" /></button>
+    <main class="flex column width-100 centred">
+        <div id="index" class="flex column centred gap-16 width-100">
+            <button class="actionButton flex centred gap-8">Upload files<img src="icons/upload.svg" alt="upload icon" /></button>
             <p>Or drag and drop</p>
         </div>
-        <div class="converter">
+        <div class="converter hidden">
             <p>Preview</p>
             <section class="preview">
                 <div class="card">
                     <img src="" alt=""/>
                     <p></p>
+                    <button><img src="icons/remove.svg" alt=""></button>
                 </div>
             </section>
             <section class="controls">
